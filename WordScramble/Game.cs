@@ -119,7 +119,7 @@ namespace WordScramble
                 // Shift existing entries
                 for (int i = gameStats.Length - 1; i > 0; i--)
                 {
-                    // ////////// => TO IMPLEMENT <= //////////// //
+                    gameStats[i]= gameStats[i-1];
                 }
 
                 // Add new result at the beginning
