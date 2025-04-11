@@ -39,7 +39,7 @@ namespace WordScramble
                 string[] fileWords = File.ReadAllLines(filePath);
                 foreach (string word in fileWords)
                 {
-                    string transformedWord = word.Transform(typeof.UpperCase);
+                    string transformedWord = word.Transform(To.UpperCase);
                     words.Add(transformedWord);
                 }
             }
@@ -64,7 +64,7 @@ namespace WordScramble
         public string GetRandomWord()
         {
             int i = random.Next(words.Count);
-            return words[i];
+            return words[i]; 
         }
 
         /// <summary>
