@@ -166,6 +166,11 @@ namespace WordScramble
                     (i + 1).ToString(),
                     gameStats[i].Word,
                     gameStats[i].TimeTaken.ToString("F2"));
+                
+                AnsiConsole.Write(table);
+                AnsiConsole.Markup(
+                    "\n[bold green]Press Enter to Return to the Menu...[/]");
+                Console.ReadLine();
             }
         }
     }
