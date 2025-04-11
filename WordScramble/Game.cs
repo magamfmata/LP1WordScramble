@@ -11,7 +11,6 @@ namespace WordScramble
         /// The provider responsible for generating the words for the game.
         /// </summary>
         private readonly WordProvider wordProvider;
-
         /// <summary>
         /// A list to store the last 5 game results for the game stats board.
         /// </summary>
@@ -107,8 +106,7 @@ namespace WordScramble
             /// Checks if the player's guess is correct.
             /// </summary>
             bool isCorrect = string.Equals( 
-                userInput, word, StringComparison.OrdinalIgnoreCase
-            ) 
+                userInput, word, StringComparison.OrdinalIgnoreCase);
 
             if (isCorrect)
             {
@@ -169,12 +167,11 @@ namespace WordScramble
                     gameStats[i].Word,
                     gameStats[i].TimeTaken.ToString("F2")
                 )
+            };
             }
-
             AnsiConsole.Write(table);
             AnsiConsole.Markup(
                 "\n[bold green]Press Enter to Return to Menu...[/]");
             Console.ReadLine();
         }
     }
-}
