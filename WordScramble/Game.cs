@@ -6,6 +6,7 @@ using Spectre.Console;
 namespace WordScramble
 {
     public class Game
+
     {
         /// <summary>
         /// The provider responsible for generating the words for the game.
@@ -74,6 +75,7 @@ namespace WordScramble
         /// board; otherwise, the correct word is displayed. The game stats 
         /// board only stores the last 5 results.
         /// </remarks>
+
         private void StartGame()
         {
             /// <summary>
@@ -84,7 +86,7 @@ namespace WordScramble
             /// <summary>
             /// The scrambled version of the word.
             /// </summary>
-            string scrambledWord = wordProvider.scrambledWord(word);
+            string scrambledWord = wordProvider.ScrambleWord(word);
 
             AnsiConsole.Clear();
             AnsiConsole.MarkupLine("[bold green]Unscramble the word:[/]");
