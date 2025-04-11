@@ -159,7 +159,7 @@ namespace WordScramble
             {
                 if (gameStats[i] == null)
                 {
-                    // ////////// => TO IMPLEMENT <= //////////// //
+                    continue;
                 }
                 
                 // Add row to table
