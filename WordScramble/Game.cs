@@ -164,7 +164,11 @@ namespace WordScramble
                 
                 // Add row to table
                 // Table.AddRow() only accepts strings
-                // ////////// => TO IMPLEMENT <= //////////// //
+                table.AddRow(
+                    (i + 1).ToString(),
+                    gameStats[i].Word,
+                    gameStats[i].TimeTaken.ToString("F2")
+                )
             }
 
             AnsiConsole.Write(table);
